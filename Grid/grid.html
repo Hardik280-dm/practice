@@ -1,0 +1,29 @@
+<html>
+    <style>
+        .main-cnt {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;   /* 3 equal columns */
+            grid-template-rows: 1fr 1fr 1fr;      
+            gap: 16px;                          
+            height:150px;
+            width:400px;
+        }
+
+        .box{
+
+            height:50px;
+            width:100px;
+            border:1px solid gray;
+            color:gray;
+            border-radius:3px;
+        }
+    </style>
+<body>
+    <div class="main-cnt">
+        <div class="box"> Box-1 </div>
+        <div class="box"> Box-1 </div>
+        <div class="box" style="grid-template-column:1fr 1fr;"> Box-1 </div>
+        <div class="box"> Box-1 </div>
+    </div>
+</body>
+</html>
